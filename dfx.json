@@ -1,0 +1,17 @@
+{
+  "canisters": {
+    "wat": {
+      "type": "custom",
+      "wasm": "./canister.wasm",
+      "build": [
+        "wat2wasm canister.wat"
+      ],
+      "candid": "canister.did",
+      "metadata": [
+        {
+          "name": "candid:service"
+        }
+      ]
+    }
+  }
+}
