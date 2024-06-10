@@ -1,1 +1,5 @@
-service : {};
+service : {
+  greet : () -> () query;
+  canister_init : () -> ();
+  use_stable_memory : () -> ();
+}
