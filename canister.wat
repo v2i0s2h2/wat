@@ -35,14 +35,14 @@
 
   ;; This is another function called "canister_init".
   ;; It's like a recipe for setting up the kitchen before we start cooking.
-  (func $canister_init (export "canister_init")
+  (func $canister_init (export "canister_query canister_init")
     ;; This is where we would do any setup tasks, like getting the pots and pans ready.
     ;; But for now, we're not doing anything special.
   )
 
   ;; This is another function called "use_stable_memory".
   ;; It's like a recipe for using a special fridge that never loses power.
-  (func $use_stable_memory
+  (func $use_stable_memory(export "canister_query use_stable_memory")
     ;; This is the first step in the recipe.
     ;; It checks how much space we have in the special fridge.
     (call $stable_size)
